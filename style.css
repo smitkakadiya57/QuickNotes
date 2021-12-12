@@ -1,0 +1,124 @@
+/* font-family: 'Arvo', serif;
+font-family: 'Patua One', cursive; */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Patua One', cursive;
+    
+}
+.heading {
+    /* border: 2px solid red ; */
+    background-color: rgb(255, 197, 62);
+    padding: 1rem ;
+    box-shadow: 0px 0px 5px rgb(189, 133, 29);
+    margin-bottom: 1rem;
+    font-family: 'Arvo', serif;
+    
+}
+h1{
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 2px black;
+}
+i {
+  color: white;
+  text-shadow: none;
+}
+.note{
+    
+  /* border: 0.1rem solid green ; */
+  
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px -1px black;
+  width: 20rem;
+  height: 10rem;
+  overflow-x:hidden;
+  
+  float: left;
+  
+}
+textarea{
+  outline: none;
+  border: none;
+  width: 20rem;
+  height: 7rem;
+  resize: none;
+  word-wrap: normal;
+}
+.hidden{
+    display: none;
+}
+
+
+.btn-div{
+    float:right;
+}
+  .btn-div button {
+    font-size: 2em;
+    background: #f0bb40;
+    color: #fff;
+    border: 0.25rem solid #ec9b04;
+    padding: 0.85em 0.75em;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .btn-div button:hover {
+    color: #e9b118;
+  }
+  .btn-div button::after {
+    content: "";
+    background: #f6de9a;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+ 
+  .btn-div  button[class^="grow"]::after {
+    transition: all 0.3s ease;
+  }
+  .btn-div button[class^="grow"]:hover::after {
+    transition: all 0.3s ease-out;
+  }
+  
+  .btn-div button.grow_skew_forward::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+  }
+  .btn-div  button.grow_skew_forward:hover::after {
+    transform: skewX(-45deg) scale(1, 1);
+  }
+  
+
+ /* css for edit and delete button */
+ 
+.edit , .delete {
+  border: none;
+  padding: 0.2rem;
+  margin: 0.3rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+ box-shadow: 0px 0px  3px rgb(2, 2, 2);
+ float: right;
+}
+.edit :hover {
+  zoom: 105%;
+}
+.delete :hover {
+  zoom: 105%;
+}
+ .edit {
+     background: rgb(14, 185, 14);
+ }
+  .delete{
+    background:red;
+  }
+
+
+  
